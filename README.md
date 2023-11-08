@@ -16,3 +16,6 @@ Apesar do projeto printar o envio e recebimento das mensagens, é possível acom
 
 É possível enviar mensagens diretamente pelo console:
 <br>`bin/kafka-console-producer.sh --broker-list localhost:9092 --topic NOME_DO_TOPICO`
+
+Altere o número de partições para o tópico:
+<br>`bin/kafka-topics.sh --alter --bootstrap-server localhost:9092 --topic ECOMMERCE_NEW_ORDER --partitions 3`
