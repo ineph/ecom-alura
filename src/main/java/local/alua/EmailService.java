@@ -2,6 +2,8 @@ package local.alua;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 
+import java.util.HashMap;
+
 
 public class EmailService {
 
@@ -10,7 +12,9 @@ public class EmailService {
         try(var service = new KafkaService(
                 EmailService.class.getSimpleName().toString(),
                 "ECOMMERCE_SEND_EMAIL",
-                emailService::parse)) {
+                emailService::parse,
+                String.class,
+                new HashMap<>())) {
             service.run();
         }
     }
