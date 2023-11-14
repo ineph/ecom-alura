@@ -1,4 +1,4 @@
-package local.alua;
+package local.alura;
 
 import org.apache.kafka.clients.producer.Callback;
 import org.apache.kafka.clients.producer.KafkaProducer;
@@ -10,11 +10,11 @@ import java.io.Closeable;
 import java.util.Properties;
 import java.util.concurrent.ExecutionException;
 
-class KafkaDispatcher<T> implements Closeable {
+public class KafkaDispatcher<T> implements Closeable {
 
     private final KafkaProducer<String, T> producer;
 
-    KafkaDispatcher(){
+    public KafkaDispatcher(){
         this.producer = new KafkaProducer<>(properties());
     }
 

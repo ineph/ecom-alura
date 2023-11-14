@@ -1,4 +1,4 @@
-package local.alua;
+package local.alura;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

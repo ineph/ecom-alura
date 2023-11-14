@@ -7,6 +7,14 @@
     <groupId>local.alua</groupId>
     <artifactId>ecom-alura</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>common-kafka</module>
+        <module>service-email</module>
+        <module>service-log</module>
+        <module>service-fraud-detector</module>
+        <module>service-new-order</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
@@ -37,8 +45,5 @@
             <version>2.8.9</version>
         </dependency>
 
-
-
     </dependencies>
-
 </project>

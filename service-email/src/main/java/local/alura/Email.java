@@ -1,4 +1,4 @@
-package local.alua;
+package local.alura;
 
 public class Email {
     private final String subject, body;
